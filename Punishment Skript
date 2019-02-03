@@ -1,0 +1,18 @@
+# Murder Mystery Punishment Skript
+
+command /p [<offlineplayer>]:
+    permission: staff.p
+    permission message: &cYou cannot use this command.
+    trigger:
+        if arg 1 is set:
+            open virtual chest inventory with 5 rows named "           &c&lPunishment GUI" to player
+            format gui slot 4 of player with arg-1's skull named "&7%arg-1%" with lore "&cYou are punishing this player" to do nothing
+            format gui slot 20 of player with cactus green named "&aWarn" with lore "&aClick to warn player" to run:
+                open virtual chest inventory with 5 rows named " &aWarning %arg 1%" to player
+                format gui slot 0 of player with diamond to do nothing
+            format gui slot 22 of player with dandelion yellow named "&eMute" with lore "&eClick to mute player" to run:
+                open virtual chest inventory with 5 rows named " &eMuting %arg 1%" to player
+                format gui slot 0 of player with diamond to do nothing
+            format gui slot 24 of player with rose red named "&cBan" with lore "&cClick to ban player" to run:
+                open virtual chest inventory with 5 rows named " &cBanning %arg 1%" to player
+                format gui slot 0 of player with diamond to do nothing
