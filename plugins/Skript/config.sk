@@ -91,7 +91,7 @@ player variable fix: true
 #It will check if the player is online and then get the valid(new) player object and update the variable object to that one.
 #By Mirre
 
-use player UUIDs in variable names: false
+use player UUIDs in variable names: true
 # Whether to use a player's UUID instead of their name in variables, e.g. {home.%player%} will look like
 # {home.e5240337-a4a2-39dd-8ed9-e5ce729a8522} instead of {home.njol}.
 # Please note that if this setting is changed old variables WILL NOT be renamed automatically.
